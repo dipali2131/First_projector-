@@ -1,0 +1,16 @@
+
+.image{
+   width: 20%;
+  
+ padding: 15px;
+  
+    text-align: center;
+}
+.imagecontainer{
+    display: flex;
+justify-content: space-evenly;
+border-radius: 10px;
+}
+.image img{
+    width: 100%;
+}

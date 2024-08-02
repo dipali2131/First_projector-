@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellpadding="3" >
+        <tr>
+            <th >Level</th>
+            <th colspan="5">outboundPayment</th>
+        </tr>
+        <tr>
+            
+            <th colspan="2">  Sort Assending</th>
+
+            <th colspan="4">Payee name</th>
+        </tr>
+        <tr>
+            <th>Position</th>
+            <th>Length</th>
+            <th>Format</th>
+            <th>PAD</th>
+            <th>Date</th>
+            <th>Comment</th>
+        </tr>
+        <tr>
+    <th colspan="2 ">New Record</th>
+    <th colspan="4">Entry_Detail_CR</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>Number</td>
+            <td>L,'0'</td>
+            <td>6</td>
+            <td>Record Type</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>Alpha</td>
+            <td>R,''</td>
+            <td>DECODE(PaymentAmount/Value,0,'23','22')</td>
+            <td>Transaction</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>9</td>
+            <td>Number</td>
+            <td>L,'0'</td>
+            <td>PayeeBankAccount/BranchNumber</td>
+            <td>Receiving</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>17</td>
+            <td>Alpha</td>
+            <td>R,''</td>
+            <td>PayeeBankAccount/BranchNumber</td>
+            <td>DFI Account</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>10</td>
+            <td>Number.Integer</td>
+            <td>L,'0'</td>
+            <td>PaymentBankAccount/Value*100</td>
+            <td>Amount</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>15</td>
+            <td>Alpha</td>
+            <td>R,''</td>
+            <td>PaymentBankAccount/PaymentReferenceNumber</td>
+            <td>Identification</td>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>22</td>
+            <td>Alpha</td>
+            <td>R,''</td>
+            <td>NVL(Payee/AlternateName, Payee/Name)</td>
+            <td>Receiving Number</td>
+        </tr>
+    </table>
+</body>
+</html>

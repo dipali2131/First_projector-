@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .back {
+            background-color: red;
+            height: 300px;
+            width: 900px;
+        }
+
+        .text {
+            font-size: 30px;
+            color: blanchedalmond;
+        }
+
+        @media (max-width:480px) {
+            .back {
+                background-color: rgb(138, 129, 129);
+                height: 300px;
+                width: 300px;
+            }
+
+            .text {
+                font-size: 30px;
+                color: rgb(255, 153, 0);
+            }
+        }
+        @media only screen and (min-width:480px) and (max-width:920px) {
+            .back {
+                background-color: rgb(63, 27, 222);
+                height: 300px;
+                width: 600px;
+            }
+
+            .text {
+                font-size: 30px;
+                color: rgb(216, 30, 39);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" back">
+        <h1 class=" text">pooja dalvi</h1>
+    </div>
+</body>
+
+</html>

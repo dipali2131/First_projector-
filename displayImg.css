@@ -1,0 +1,19 @@
+.card{
+   height: 200px;
+   width: 200px;
+    padding: 40px;
+    border: 2px solid black;
+    text-align: center;
+}
+.fa-instagram{
+    background-color: chocolate;
+    font-size: 50px;
+    padding: 20px;
+}
+.cardtext{
+    font-size: 13px;
+}
+.cardcontainer{
+    display: flex;
+    justify-content: space-evenly;
+}

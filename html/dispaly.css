@@ -1,0 +1,21 @@
+.card{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 30px;
+   
+}
+.fa-figma{
+    background-color: coral;
+    font-size: 50px;
+    padding: 10px;
+}
+.cerdtext{
+    font-size: 12px;
+
+}
+.cardcontainer{
+    display: flex;
+    justify-content: space-evenly;
+}
